@@ -1,0 +1,202 @@
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+body{
+    background: linear-gradient(to right,  #3e3468, #3f3f57);
+}
+
+/* Ajustar el ancho de la caja de texto */
+.form-container form{
+    width: 100%;
+    max-width: 400px; /* Ajusta este valor segun el ancho deseado */
+}
+
+.banner{
+    text-align: center;
+    background-color: #241b46;
+    border: 1px solid #000; /* Ejemplo de borde */
+    border-radius: 10px; /* Ajusta el valor para redondear más o menos */
+}
+
+.logo{
+width: 690px;
+
+}
+
+
+.testimonio{
+    text-align: center;
+    font-style: italic;
+    margin: 20px 0;
+    background-image: url("testimonio.jpg");
+    border: 1px solid #000; /* Ejemplo de borde */
+    border-radius: 10px;
+    color: white;
+}
+
+.carousel-item{
+    padding: 20px;
+}
+
+.oferta{
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(0, 0, 0);
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.carousel-inner {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-item {
+    padding: 20px;
+    text-align: center;
+}
+
+.oferta {
+    text-align: center;
+    font-weight: bold;
+    background-image: url("testimonio.jpg");
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+    color: #c78d8d;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+}
+
+.carousel-control-prev {
+    left: 20px;
+}
+
+.carousel-control-next {
+    right: 20px;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    color: #337ab7;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    font-size: 20px;
+    color: #333;
+}
+
+.carousel-control-prev-icon:hover, .carousel-control-next-icon:hover {
+    color: #337ab7;
+}
+.centrado1 {
+    text-align: center;
+
+}
+
+.como-funciona h2 {
+    font-weight: bold;
+    color: #fff;
+    
+}
+
+
+
+.oferta p{
+
+    color:  white;
+}
+
+.paso {
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.paso h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.paso p {
+    font-size: 1.1em;
+    color: white;
+}
+
+.paso:hover {
+    transform: scale(1.05);
+}
+
+.card {
+    border: none
+}
+
+.bg-primary {
+    background-color: #c49404 !important;
+}
+
+.bg-success {
+    background-color: #7bbb96 !important;
+}
+
+.bg-danger {
+    background-color: #2f358f !important;
+}
+.marcas img{
+width: 100px;
+height: 100px;
+margin-left: 150px;
+}
+.marcas h2{
+    text-align: center;
+    
+}
+footer{
+background-color: #c49404;
+color: white;
+padding: 20px 0;
+margin: auto;
+/*margin: auto;*/
+}
+
+footer h5 {
+font-size: 16px;
+}
+
+footer ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li{
+margin-bottom: 10px;
+}
+
+footer ul li a{
+
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover{
+
+    text-decoration: underline;
+}
+
+
+.tamañoimagen{
+
+width: 100px;
+margin-left: 350px;
+}

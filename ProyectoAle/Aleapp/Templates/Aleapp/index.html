@@ -1,0 +1,246 @@
+{% extends 'Aleapp/base.html' %}
+
+{% load static %}
+
+{% block title %}
+
+    Home page
+
+{% endblock title %}
+
+
+{%  block codigoDinamico %}
+
+<div class="container">
+        <!-- Banner principal -->
+    <div class="banner">
+        <h1>Bienvenido</h1>
+        <img src="{% static 'Aleapp/Figuras.jpg' %}" alt="Imagen" class="logo">
+        <p>Encuentra tus productos favoritos de Warhammer 40 000</p>
+    </div>
+    <br> <br>
+</div>
+
+<div id="testimoniosCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+        <div class="testimonio">
+            <p>pedidos llegado en tiempo y forma</p>
+            <p><strong>-gomez</strong></p>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <div class="testimonio">
+            <p>LA MEJOR TIENDA DE ARGENTINA</p>
+            <p><strong>-El emperador proteje</strong></p>
+        </div>
+        </div>
+    <div class="carousel-item">
+        <div class="testimonio">
+            <p>la calidad el producto excelente</p>
+            <p><strong>-pepe</strong></p>
+        </div>
+        </div>
+    <div class="carousel-item">
+        <div class="testimonio">
+            <p>buenos acabados en pintura</p>
+            <p><strong>-jose</strong></p>
+        </div>
+    </div>
+    </div>
+    <a class="carousel-control-prev" href="#testimoniosCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+    </a>
+    <a class="carousel-control-next" href="#testimoniosCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+    </a>
+</div>
+<br> <br>
+<h2 class="centrado1"> Nuestras ofertas exclusivas </h2>
+<div id="ofertasCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="oferta">
+                <p>5% descuento en tu primera compra</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="oferta">
+                <p>llevate un capitulo completo y te hacemos un descuento 10%</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="oferta">
+                <p>recien inciando llevate figuras con un total de 1000 puntos</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="oferta">
+                <p>un dreagnouth solo por esta apertura a un 5%</p>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#ofertasCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+    </a>
+    <a class="carousel-control-next" href="#ofertasCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+    </a>
+</div>
+
+<div class="marcas mt-5">
+    <h2>Nuestras Marcas</h2>
+    <div class="row">
+        <div class="col-md-2">
+            <img src="{% static 'aleapp/marca1.jpg' %}" alt="Marca1" class="img-fluid">
+        </div>
+        <div class="col-md-2">
+            <img src="{% static 'Aleapp/marca2.jpg' %}" alt="Marca2" class="img-fluid">
+        </div>
+        <div class="col-md-2">
+            <img src="{% static 'Aleapp/marca3.jpg' %}" alt="Marca3" class="img-fluid">
+        </div>
+        <div class="col-md-2">
+            <img src="{% static 'Aleapp/marca4.jpg' %}" alt="Marca4" class="img-fluid">
+        </div>
+        <div class="col-md-2">
+            <img src="{% static 'Aleapp/marca5.jpg' %}" alt="Marca5" class="img-fluid">
+        </div>
+    </div>
+</div>
+<br> <br>
+
+
+<div class="como-funciona mt-5">
+    <h2 class="text-center mb-4">Como funca esto?</h2>
+    <div class="row text-center">
+    <div class="col-md-4">
+        <div class="card h-100 shadow-Ig">
+            <div class="card-body paso bg-primary text-white rounded">
+                <h3 class="card-title">Pedidos</h3>
+                <p class="card-tex">haces tus compras y estas te llegaran en tiempo y forma</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100 shadow-Ig">
+            <div class="card-body paso bg-success text-white rounded">
+                <h3 class="card-title">
+                Completa el formulario
+                </h3>
+                <p class="card-tex">tan pronto como sea posible nos contactaremos con usted</p>
+            </div>
+        </div>  
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100 shadow-Ig">
+            <div class="card-body paso bg-danger text-white rounded">
+                <h3 class="card-title">Seguridad, de principio a fin</h3>
+                <p class="card-tex">¿No te gusta? ¡Devolvelo! En Figuras El Maestro de Ultramar, no hay nada que no puedas hacer, porque estás siempre protegido.</p>
+            </div>
+        </div>
+    </div>         
+</div>
+<br> <br> <br>
+<div class="faq mt-5">
+    <h2>Preguntas Frecuentes</h2>
+    <div id="accordion">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse"  data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        ¿COMO PUEDO DEVOLVER MI PRODUCTO?
+                    </button>
+                </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelleby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                    Puedes devolver un producto en un plazo de 30 dias de la compra.Contacta con nuestro equipo para iniciar el proceso
+                </div> 
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed"  data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        ¿Cuales son los metodos de pago aceptados?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                    Aceptamos tarjetas de credito, debito, PayPal, y pagos a traves de tranferencias bancarias.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br> <br> <br>
+
+<div class="contacto mt-5">
+    <h2>Encuentranos</h2>
+
+        <div class="row">
+            <div class="col-md-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.710233276942!2d-58.608289724952755!3d-34.687262072924376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc6f9578cb265%3A0xa8f8ece7c3eabbed!2sEstocolmo%201228%2C%20B1753DKX%20Villa%20Luzuriaga%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1726856887172!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+</div>
+
+            <div class="contacto mt-5">
+                <div class="row mt-4">
+                    <div class="col-md-12">
+                        <h3>Contactanos</h3>
+
+                        <form action="{% url 'contacto' %}" method="post">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" name="nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="text" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="asunto">Asunto</label>
+                                <textarea class="form-control" id="asunto" name="asunto" rows="3" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="mensaje">Mensaje</label>
+                                <textarea class="form-control" id="mensaje" name="mensaje" rows="3" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script> 
+  $('.carousel').carousel({ 
+        interval: 3000  // Ajusta la velocidad (en milisegundos) 
+  }); 
+</script>
+
+<script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+</script>
+</div>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+{% endblock %}

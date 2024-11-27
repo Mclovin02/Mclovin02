@@ -1,0 +1,27 @@
+{% extends  'Aleapp/base.html' %}
+
+{% load static %}
+
+{% block title %}
+    Actualizar Usuarios
+{% endblock title %}
+
+{% block codigoDinamico %}
+
+<div class="container">
+        <form action="" method="post">{% csrf_token %}
+            <br> <br> <br>
+            <h1>crear  un nuevo usuario</h1> <br> <br> <br>
+            <table>
+                {{form.as_table}}
+            </table>
+            <br> <br>
+            <div class="container">
+                <button type="submit" class="btn btn-succes">Actualizar Usuarios</button>
+            
+            </div>
+        </form>
+</div>
+
+{% endblock %}
+    

@@ -1,0 +1,92 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://bootswatch.com/5/solar/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="icon" href="{% static 'Aleapp/naza.jpg' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'Aleapp/stylesapp.css' %}">  
+    <title>
+    {% block title %} 
+    
+    {% endblock title %} 
+    </title>
+
+</head>
+<body>    
+    <header>
+
+      <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="{% url 'Home' %}">Industrias Ale</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="{% url 'Home' %}">Home
+                  <span class="visually-hidden">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'productos' %}">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'usuarios' %}">Usuarios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'ventas_detalles'  %}">Ventas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'Registro' %}">Registro</a>
+              </li>
+                </div>
+            </ul>
+            
+            {% if request.user.is_authenticated  %}
+            </h4>¡Hola!,{{user.username}}!</h4>
+            <button type="button" class="btn btn-outline-warning"><a href="{% url 'logout' %}">Logout</a></button>
+            {% else %}
+            <button type="button" class="btn btn-outline-success"><a href="{% url 'login' %}">Login</a></button>
+            {% endif %}
+          </div>
+        </div>
+      </nav>
+      
+        
+    </header>
+    <br> <br>
+{% block codigoDinamico %} 
+
+{% endblock  %} 
+<br> <br> <br>
+
+  <footer class="mt-5">
+      <div class="row">
+          <div class="col-md-4">
+              <h5>Warhammer 40 000</h5>
+              <p>Encuentra tus productos favoritos de Warhammer 40 000</p>
+          </div>
+          <div class="col-md-4">
+              <h5>Enlaces rapidos </h5>
+          <ul>
+              <li><a href="{% url 'privacy_policy' %}">Politica y privacidad </a></li>
+              <li><a href="{% url 'terms_conditions'%}">Terminos y condiciones</a></li>
+              <p>&copy; <span id="currentYear"></span>Warhammer 40 000.Todos los derechos Reservados.</p>
+          </ul>
+          </div>
+          <div class="col-md-4">
+          <h5>Redes sociales</h5>
+          <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+          </ul>
+          </div>
+      </div>
+  </footer>
+
+</body>
+</html>
